@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+}
+a:hover {
+    color: red;
+}
+header {
+    color: white;
+    padding: 20px;
+    grid-area: H;
+}
+nav {
+    padding: 15px;
+    grid-area: N;
+    color: white;
+    background-color: #1a1a1a;
+}
+main {
+    padding: 15px;
+    color: white;
+    grid-area: M;
+}
+#about p, #IBYB p, #TCFSR p {
+    text-align: center;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    grid-area: F;
+}
+#logo {
+    grid-area: L;
+}
+img {
+    border-radius: 10px;
+}
+#container {
+    display: grid;
+    grid-template-areas:
+        "H H H L"
+        "N M M M"
+        "F F F F";
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
