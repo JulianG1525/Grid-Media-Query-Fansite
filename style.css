@@ -9,14 +9,30 @@ a:hover {
 }
 header {
     color: white;
-    padding: 20px;
+    padding: 20px auto; 
     grid-area: H;
+    padding-top: 10px;
 }
 nav {
-    padding: 15px;
     grid-area: N;
     color: white;
     background-color: #1a1a1a;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+    padding: 0 50px;
+    justify-items: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: auto;
 }
 main {
     padding: 15px;
@@ -35,6 +51,7 @@ footer {
 }
 #logo {
     grid-area: L;
+    border-radius: 360px;
 }
 img {
     border-radius: 10px;
@@ -42,10 +59,11 @@ img {
 #container {
     display: grid;
     grid-template-areas:
-        "H H H L"
-        "N M M M"
+        "L H H H"
+        "N N N N"
+        "M M M M"
         "F F F F";
-    grid-template-columns: 1fr 2fr 2fr 2fr;
-    grid-gap: 10px;
-    padding: 10px;
+    grid-template-columns: 1fr 3fr 3fr 3fr;
+    /* grid-template-rows: auto; */
+    /* grid-gap: 10px; */
 }
