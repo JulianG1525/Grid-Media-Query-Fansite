@@ -1,0 +1,28 @@
+aside #TBPGallery {
+    grid-area: G;
+    padding: 10px;
+}
+header {
+    font-family: onyx, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: -15px;
+}
+#container {
+    display: grid;
+    grid-template-areas:
+        "L H H H"
+        "N N N N"
+        "M M M G"
+        "M M M G"
+        "F F F F";
+    grid-template-columns: 1fr 3fr 3fr 3fr;
+    /* grid-template-rows: auto; */
+    /* grid-gap: 10px; */
+}
+aside {
+    background-color: #080808;
+    color: white;
+    padding: 10px 10px;
+}

@@ -1,0 +1,19 @@
+section#about img {
+    float: right;
+}
+ section#about h2, section#about p {
+    float: left;
+    text-align: left;
+    width: 60%;
+    font-size:30px;
+    padding: 10px;
+}
+header {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: -20px;
+}
+
+
+section#IBYB p, section#IBYB h2 {
+    float: left;
+}
