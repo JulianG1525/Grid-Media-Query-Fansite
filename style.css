@@ -7,18 +7,22 @@ body {
 header {
     font-size: 20px;
     text-align: center;
-}
-h2, p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-}
-a:hover {
-    color: red;
-}
-header {
     color: white;
     padding: 20px auto; 
     grid-area: H;
     padding-top: 10px;
+}
+h2, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    color: white;
+}
+a:hover {
+    color: red;
+}
+
+h2 a {
+    color: white;
+    text-decoration: none;
 }
 nav {
     grid-area: N;
