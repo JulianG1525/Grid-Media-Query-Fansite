@@ -1,4 +1,4 @@
-aside #TBPGallery {
+aside#TBPGallery {
     grid-area: G;
     padding: 10px;
 }
@@ -8,6 +8,9 @@ header {
     text-align: center;
     margin-bottom: -20px;
     margin-top: -15px;
+}
+section#TBP img {
+    border: #080806 5px solid;
 }
 #container {
     display: grid;

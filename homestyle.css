@@ -45,7 +45,10 @@ header {
     img {
         max-width: 100%;
     }
-    main {
-        float: none;
-    }
+ section#about h2, section#about p, section#IBYB h2, section#IBYB p, section#TCFSR h2, section#TCFSR p {
+    float: none;
+    width: 60%;
+    font-size: 16px;
+    padding-bottom: 10px;
+} 
 }

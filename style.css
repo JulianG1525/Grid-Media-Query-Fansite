@@ -39,6 +39,7 @@ nav ul {
     margin: 20px;
     padding: 0 50px;
     justify-items: center;
+    list-style-type: none;
 }
 nav a {
     color: white;
@@ -49,6 +50,7 @@ main {
     padding: 15px;
     color: white;
     grid-area: M;
+    font-size: 20px;
 }
 #about p, #IBYB p, #TCFSR p {
     text-align: center;
