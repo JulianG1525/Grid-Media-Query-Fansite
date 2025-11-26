@@ -1,17 +1,51 @@
-section#about img {
+section#about img, section#IBYB img, section#TCFSR img {
     float: right;
 }
  section#about h2, section#about p, section#IBYB h2, section#IBYB p, section#TCFSR h2, section#TCFSR p {
     float: left;
     text-align: left;
     width: 60%;
-    font-size:30px;
-    padding: 10px;
+    font-size:25px;
+    padding-bottom: 10px;
+} 
+ section#about p, section#IBYB p, section#TCFSR p{
+    padding-bottom: 100px;
+}
+section#IBYB img {
+    border: #271020 5px solid;
+}
+section#TCFSR img {
+    border: #9c141e 5px solid;
 }
 header {
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: -20px;
 }
-section#IBYB p, section#IBYB h2 {
-    float: left;
+#container {
+    display: grid;
+    grid-template-areas:
+        "L H H H"
+        "N N N N"
+        "M M M M"
+        "F F F F";
+    grid-template-columns: 1fr 3fr 3fr 3fr;
+}
+@media (width < 500px) {
+    #container {
+        grid-template-areas:
+            "H H H"
+            "N N N"
+            "M M M"
+            "F F F";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #logo {
+        display:none
+    }
+    img {
+        max-width: 100%;
+    }
+    main {
+        float: none;
+    }
 }

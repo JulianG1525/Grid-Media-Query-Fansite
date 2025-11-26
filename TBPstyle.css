@@ -26,3 +26,26 @@ aside {
     color: white;
     padding: 10px 10px;
 }
+@media (width < 500px) {
+        #container {
+        grid-template-areas:
+            "H H H"
+            "N N N"
+            "M M M"
+            "G G G"
+            "F F F";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #logo {
+        display:none
+    }
+    aside#TBPGallery {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+    }
+    p, h2, img {
+        float: none;
+    }
+}
